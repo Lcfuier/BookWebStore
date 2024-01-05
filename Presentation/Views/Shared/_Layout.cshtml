@@ -1,0 +1,116 @@
+﻿@using Entity.Constants;
+@{
+    //int quantity = Context.Session.GetInt32(SessionSD.CartItemQuantityKey) ?? 0;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - BookStore</title>
+    <link rel="stylesheet" href="~/css/bootswatchTheme.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Presentation.styles.css" asp-append-version="true" />
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <link rel=" icon" href="~/favicon.png" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css" />
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.min.css" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    @RenderSection("Styles", false)
+</head>
+<body>
+    <header>
+
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand text-dark" href="/">
+                    <i class="bi bi-book-half"></i>&nbsp;BookStore
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index"><i class="bi bi-house-fill"></i>&nbsp;Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy"><i class="bi bi-shield-lock"></i>&nbsp;Chính sách</a>
+                        </li>
+                        @if (User.IsInRole(Roles.User))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="Librarian" asp-controller="Order" asp-action="Index"><i class="bi bi-basket-fill"></i>&nbsp;Đơn hàng đã đặt</a>
+
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="User"
+                                   asp-controller="Cart" asp-action="Index">
+                                    <i class="bi bi-cart-fill"></i>
+                                    Giỏ hàng<span class="badge">@await Component.InvokeAsync("CartItemCount")</span>
+                                </a>
+                            </li>
+                        }
+                        @if (User.IsInRole(Roles.Librarian))
+                        {
+                            <li class="nav-item dropdown " aria-haspopup="true" aria-expanded="false">
+                                <a class="nav-link dropdown-toggle " role="button" data-bs-toggle="dropdown" >
+                                    <i class="bi bi-gear-wide-connected"></i>&nbsp;Quản lý cửa hàng
+                                </a>
+                                <ul class="dropdown-menu " aria-haspopup="true" aria-expanded="false">
+                                    <li>
+                                        <a class="dropdown-item show" asp-area="Librarian" asp-controller="Book" asp-action="Index">Sách</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item show" asp-area="Librarian" asp-controller="Publisher" asp-action="Index">Nhà xuất bản</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item show" asp-area="Librarian" asp-controller="Author" asp-action="Index">Tác giả</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item show" asp-area="Librarian" asp-controller="Category" asp-action="Index">Thể loại</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item show" asp-area="Librarian" asp-controller="Order" asp-action="Index">Đơn hàng</a>
+
+                                    </li>
+                                </ul>
+                            </li>
+                        }
+                        @if (User.IsInRole(Roles.Admin))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="Admin"
+                                   asp-controller="User" asp-action="Index">
+                                    <i class="bi bi-person-circle"></i>
+                                    &nbsp;Quản lí người dùng
+                                </a>
+                            </li>
+                        }
+                    </ul>
+                    <partial name="_Notification" />
+                    <partial name="_LoginPartial" />
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container-fluid">
+            &copy; 2023 - BookStore - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="~/js/site.js"></script>
+    <script src="~/js/search/search-book.js"></script>
+    @await RenderSectionAsync("scripts", required: false)
+    
+</body>
+</html>

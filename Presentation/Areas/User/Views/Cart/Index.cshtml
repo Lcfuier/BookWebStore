@@ -1,0 +1,125 @@
+﻿@model  Cart
+@{
+    ViewData["Title"] = "Giỏ hàng";
+}
+<br />
+<div class="card shadow ">
+    <div class="card-header bg-dark bg-gradient text-light ">
+        <div class="row ">
+            <div class="col-6 d-flex align-items-center">
+                <i class="bi bi-cart-fill"></i>&nbsp;Giỏ hàng của bạn
+            </div>
+            <div class="col-6 text-end">
+                <a asp-area="" asp-controller="Home" asp-action="Index" class="btn btn-outline-danger btn-sm">Tiếp tục mua sắm</a>
+            </div>
+        </div>
+    </div>
+
+    @if (Model?.CartItems.Count > 0)
+    {
+        <div class="card-body">
+            @foreach (CartItem cartItem in Model.CartItems)
+            {
+                <form asp-action="AddCartItem" method="get">
+                    <input type="hidden" asp-for="@cartItem.BookId" />
+                    <input type="hidden" asp-for="@cartItem.CartItemID" />
+
+                    <div class="row">
+                        <div class="row pb-1">
+                            <div class="d-none d-lg-block col-lg-1 text-center py-2">
+                                <a asp-area="" asp-controller="Book" asp-action="Detail"
+                                   asp-route-id="@cartItem.BookId">
+                                    @if (cartItem.Book.ImageURL is not null)
+                                    {
+                                        <img class="img-fluid rounded"
+                                             src="/Images/Book/@cartItem.Book.ImageURL" />
+                                    }
+                                    else
+                                    {
+                                        <img class="img-fluid rounded"
+                                             src="/Images/Book/@cartItem.Book.ImageURL" width="100%" class="rounded" />
+                                    }
+                                </a>
+                            </div>
+                            <div class="col-12 col-lg-5 pt-md-3">
+                                <h5 class="text-uppercase text-secondary">
+                                    <strong>
+                                        <a asp-area="" asp-controller="Book" asp-action="Detail"
+                                           asp-route-id="@cartItem.BookId">
+                                            @cartItem.Book.Title
+                                        </a>
+                                    </strong>
+                                </h5>
+                                @*<p><small>@Html.Raw(shoppingCartItem.Product.Description)</small></p>*@
+                                <p><small>Unit Price: @((cartItem.Book.Price - cartItem.Book.Price*cartItem.Book.DiscountPercent).ToString("#,## đ"))</small></p>
+
+                            </div>
+                            <div class="col-12  col-lg-6 text-center row">
+                                <div class="col-4 text-md-right pt-2 pt-md-4">
+                                    <h5 class="fw-bold text-warning">
+                                        @(cartItem.Price.ToString("#,## đ"))
+                                    </h5>
+                                </div>
+                                <div class="col-5 col-sm-4 col-lg-5 pt-2">
+                                    <div class="w-75 btn-group" role="group">
+                                        <a asp-action="MinusCartItem" asp-route-Id="@cartItem.CartItemID" class="btn btn-outline-dark bg-gradient py-2" style="font-size: 25px;">
+                                            -
+                                        </a>
+                                        <div class="align-self-center">
+                                            <span class="p-2 fw-bold">@cartItem.Quantity</span>
+                                        </div>
+                                        <a  asp-action="PlusCartItem" asp-route-Id="@cartItem.CartItemID" class="btn btn-outline-dark bg-gradient py-2" style="font-size: 25px;">
+                                            +
+                                        </a>
+                                    </div>
+
+                                </div>
+                                <div class="col-3 col-sm-4 col-lg-2 offset-lg-1 text-right pt-2">
+                                    <a onclick=Delete asp-action="RemoveCartItem"
+                                       asp-route-id="@cartItem.CartItemID" class="btn btn-danger bg-gradient text-white btn-outline-dark py-2 ">
+                                        <i class="bi bi-trash-fill"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                    <hr />
+                </form>
+            }
+
+            <div class="row">
+                <div class="col-lg-3 offset-lg-9 col-5 offset-7">
+                    <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between bg-light">
+                            <span class="text-info">Tổng</span>
+                            <strong class="text-info">@Model.Amount.ToString("#,## đ")</strong>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-footer">
+            <div class="row">
+                <div class="col-lg-4 offset-lg-8 col-md-6 offset-md-6">
+                    <a class="btn btn-primary form-control" asp-area="User" asp-controller="Order" asp-action="Payment"
+                       asp-route-id="@Model.CartId">
+                        Xác Nhận
+                    </a>
+                </div>
+            </div>
+        </div>
+    }
+    else
+    {
+        <h5 class="text-center">Hiện không có sách nào trong giỏ của bạn.</h5>
+        
+    }
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script src="~/js/datatable/confirm-delete.js"></script>
+}

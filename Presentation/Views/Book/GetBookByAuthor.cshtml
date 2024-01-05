@@ -1,0 +1,51 @@
+﻿@model IEnumerable<Book>
+@{
+    ViewData["Title"] = "Sách";
+}
+
+<h1>Sách của tác giả <span class="text-uppercase ">@Model.FirstOrDefault().Author.FullName</span></h1>
+<hr />
+<div class="w-100 mt-4 d-flex flex-wrap">
+    @foreach (var book in Model)
+    {
+        <div class="card mx-2 mb-4" style="width: 16rem;">
+            @if (string.IsNullOrEmpty(book.ImageURL))
+            {
+                <img style="width:100%;height:300px" src="/Images/Book/No-Image-Placeholder.svg.png" class="card-img-top" alt="...">
+            }
+            else
+            {
+                <img style="width:100%;height:300px" src="/Images/Book/@book.ImageURL" class="card-img-top" alt="...">
+            }
+
+            <div class="card-body">
+                <h5 class="card-title text-Dark bg-gradient fw-semibold">@book.Title</h5>
+                <p class="card-text">
+                    <b class="text-primary"> Tác giả :</b> @book.Author.FullName<br>
+                    @if (book.DiscountPercent > 0)
+                    {
+                        <b class="text-primary"> Giá :</b>
+
+                        <span class="text-decoration-line-through text-danger">
+                            @book.Price.ToString("#,## đ")
+                        </span> @((book.Price - book.Price * book.DiscountPercent).ToString("#,## đ"))
+
+                        <br>
+                    }
+                    else
+                    {
+                        <b class="text-primary"> Giá :</b>
+                        <span>
+                            @book.Price.ToString("#,## đ")
+                        </span>
+                        <br>
+                    }
+                </p>
+                <p>
+                    <a asp-controller="Book" asp-action="Detail" asp-route-id="@book.BookId"
+                       class="btn btn-outline-dark bg-gradient fw-semibold"> Chi tiết</a>
+                </p>
+            </div>
+        </div>
+    }
+</div>

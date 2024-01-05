@@ -1,0 +1,142 @@
+﻿@model OrderIndexViewModel
+@{
+    ViewData["Title"] = "Đặt hàng";
+}
+
+<form asp-action="Payment" method="post">
+    <br />
+    <div class="container">
+        <div class="card shadow border-0">
+            <div class="card-header bg-dark bg-gradient text-light ">
+                <div class="row ">
+                    <div class="col-6 d-flex align-items-center">
+                        <i class="bi bi-credit-card-2-front-fill"></i>&nbsp;Đặt Hàng
+                    </div>
+                    <div class="col-6 text-end">
+                        <a asp-area="User" asp-controller="Cart" asp-action="Index" class="btn btn-outline-danger btn-sm">Trở lại giỏ hàng</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="container rounded p-2">
+                    <div class="row">
+                        <div class="col-12 col-lg-6 pb-4">
+                            <input type="hidden" asp-for="CartDto.CartId" />
+                            <input type="hidden" asp-for="CartDto.Amount" />
+                            <input type="hidden" asp-for="CartItemDto.BookId" />
+                            <input type="hidden" asp-for="CartItemDto.Quantity" />
+                            <input type="hidden" asp-for="CartItemDto.Price" />
+                            <div class="row">
+                                <h4 class="d-flex justify-content-between align-items-center mb-3">
+                                    <span class="text-info">Thông tin người nhận</span>
+                                </h4>
+                            </div>
+                            <div class="row my-1">
+                                <div class="col-3">
+                                    <label class="form-label">Tên</label>
+                                </div>
+                                <div class="col-9">
+                                    <input class="form-control" asp-for="OrderDto.Name" />
+                                    <span class="text-danger" asp-validation-for="OrderDto.Name"></span>
+                                </div>
+                            </div>
+                            <div class="row my-1">
+                                <div class="col-md-3">
+                                    <label class="form-label">Số điện thoại</label>
+                                </div>
+                                <div class="col-md-9">
+                                    <input class="form-control" asp-for="OrderDto.PhoneNumber" />
+                                    <span class="text-danger" asp-validation-for="OrderDto.PhoneNumber"></span>
+                                </div>
+                            </div>
+                            <div class="row my-1">
+                                <div class="col-md-3">
+                                    <label class="form-label">Địa chỉ</label>
+                                </div>
+                                <div class="col-md-9">
+                                    <input class="form-control" asp-for="OrderDto.Address"
+                                           placeholder="đường 50" />
+                                    <span class="text-danger" asp-validation-for="OrderDto.Address"></span>
+                                </div>
+                            </div>
+                            <div class="row my-1">
+                                <div class="col-md-3">
+                                    <label class="form-label">Xã/Phường</label>
+                                </div>
+                                <div class="col-md-9">
+                                    <input class="form-control" asp-for="OrderDto.Ward"
+                                           placeholder ="Hiệp Bình Chánh" />
+                                    <span class="text-danger" asp-validation-for="OrderDto.Ward"></span>
+                                </div>
+                            </div>
+                            <div class="row my-1">
+                                <div class="col-md-3">
+                                    <label class="form-label">Quận/Huyện</label>
+                                </div>
+                                <div class="col-md-9">
+                                    <input class="form-control" asp-for="OrderDto.District"
+                                           placeholder="Quận Thủ Đức" />
+                                    <span class="text-danger" asp-validation-for="OrderDto.District"></span>
+                                </div>
+                            </div>
+                            <div class="row my-1">
+                                <div class="col-md-3">
+                                    <label class="form-label">Thành phố</label>
+                                </div>
+                                <div class="col-md-9">
+                                    <input class="form-control" asp-for="OrderDto.City"
+                                           placeholder="Hồ Chí Minh" />
+                                    <span class="text-danger" asp-validation-for="OrderDto.City"></span>
+                                </div>
+                            </div>
+                           
+                        </div>
+                        <div class="col-12 col-lg-5 offset-lg-1">
+                            <h4 class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="text-info">Thông tin đơn hàng</span>
+                            </h4>
+                            <ul class="list-group mb-3">
+                                @foreach (var cartItem in Model.CartDto.CartItems)
+                                {
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <div>
+                                            <h6 class="my-0">@cartItem.Book.Title</h6>
+                                            <small class="text-muted">Số lượng: @cartItem.Quantity</small>
+                                            <br>
+                                            <small class="text-muted">Giá: @((cartItem.Book.Price - cartItem.Book.Price * cartItem.Book.DiscountPercent).ToString("#,## đ"))</small>
+                                        </div>
+                                        <div class="text-end">
+                                            <span class="text-warning">@cartItem.Price.ToString("#,## đ")</span>
+                                        </div>
+                                    </li>
+                                }
+
+                                <li class="list-group-item d-flex justify-content-between bg-light">
+                                    <small class="text-info">Tổng (VND)</small>
+                                    <strong class="text-info">@Model.CartDto.Amount.ToString("#,## đ")</strong>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer">
+                <div class="row">
+                    <div class="col-12 col-md-8 pt-2">
+                        <p style="color:maroon; font-size:14px;">
+                            Giao hàng dự kiến :
+                            @DateTime.Now.AddDays(3).ToShortDateString() - @DateTime.Now.AddDays(7).ToShortDateString()
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <button type="submit" class="btn btn-primary form-control">Thanh toán</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

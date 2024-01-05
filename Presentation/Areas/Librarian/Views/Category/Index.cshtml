@@ -1,0 +1,30 @@
+﻿@{
+    ViewData["Title"] = "Quản Lý Thể Loại";
+}
+
+<div class="row">
+    <div class="col-6">
+        <h2 class="text-primary">Danh Sách Các Thể Loại</h2>
+    </div>
+    <div class="col-6 text-end">
+        <a class="btn btn-primary" asp-action="Upsert">
+            <span class="fas fa-plus"></span>&nbsp;Tạo Mới
+        </a>
+    </div>
+</div>
+
+<div class="p-4 border-top border-bottom">
+    <table id="datatable-category" class="table table-striped table-bordered" style="width:100%">
+        <thead class="table-info">
+            <tr>
+                <th>Tên thể loại</th>
+                <th></th>
+            </tr>
+        </thead>
+    </table>
+</div>
+
+@section Scripts {
+    <script src="~/js/datatable/category.js"></script>
+    <script src="~/js/datatable/confirm-delete.js"></script>
+}

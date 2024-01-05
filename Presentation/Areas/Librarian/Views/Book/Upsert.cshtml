@@ -1,0 +1,212 @@
+﻿@model UpdateBookDTO
+@{
+    ViewData["Title"] = ViewBag.Action == "Add" ? "Thêm Sách" : "Chỉnh Sửa Sách";
+}
+
+<form asp-action="Upsert" id="book-upsert-form" method="post" enctype="multipart/form-data">
+    <div class="row p-3 border">
+        <div class="col-12 border-bottom">
+            <h2 class="text-primary">@ViewData["Title"]</h2>
+        </div>
+        <div class="col-lg-8 pt-4">
+            <input type="hidden" asp-for="BookDto.BookId" />
+
+            <div class="mb-3 row">
+                <div class="col-3">
+                    <label class="form-label" asp-for="@Model.BookDto.Title">Tiêu đề*</label>
+                </div>
+                <div class="col-9">
+                    <input class="form-control" asp-for="BookDto.Title" />
+                    <span class="text-danger" asp-validation-for="BookDto.Title"></span>
+                </div>
+            </div>
+
+            <div class="mb-3 row">
+                <div class="col-3">
+                    <label class="form-label" asp-for="BookDto.Description">Mô tả*</label>
+                </div>
+                <div class="col-9">
+                    <textarea class="form-control" rows="6" asp-for="BookDto.Description"></textarea>
+                    <span class="text-danger" asp-validation-for="BookDto.Description"></span>
+                </div>
+            </div>
+
+            <div class="mb-3 row">
+                <div class="col-3">
+                    <label class="form-label" asp-for="BookDto.Isbn13">Isbn13*</label>
+                </div>
+                <div class="col-9">
+                    <input class="form-control" asp-for="BookDto.Isbn13" />
+                    <span class="text-danger" asp-validation-for="BookDto.Isbn13"></span>
+                </div>
+            </div>
+
+            <div class="mb-3 row">
+                <div class="col-3">
+                    <label class="form-label" asp-for="BookDto.Inventory">Hàng tồn kho*</label>
+                </div>
+                <div class="col-9">
+                    <input class="form-control" asp-for="BookDto.Inventory" />
+                    <span class="text-danger" asp-validation-for="BookDto.Inventory"></span>
+                </div>
+            </div>
+
+            <div class="mb-3 row">
+                <div class="col-3">
+                    <label class="form-label" asp-for="BookDto.Price">Giá tiền*</label>
+                </div>
+                <div class="col-9">
+                    <input class="form-control" asp-for="BookDto.Price" />
+                    <span class="text-danger" asp-validation-for="BookDto.Price"></span>
+                </div>
+            </div>
+
+            <div class="mb-3 row">
+                <div class="col-3">
+                    <label class="form-label" asp-for="BookDto.DiscountPercent">Giảm giá*</label>
+                </div>
+                <div class="col-9">
+                    <input class="form-control" asp-for="BookDto.DiscountPercent" />
+                    <span class="text-danger" asp-validation-for="BookDto.DiscountPercent"></span>
+                </div>
+            </div>
+
+            <div class="mb-3 row">
+                <div class="col-3">
+                    <label class="form-label" asp-for="BookDto.NumberOfPage">Số trang*</label>
+                </div>
+                <div class="col-9">
+                    <input class="form-control" asp-for="BookDto.NumberOfPage" />
+                    <span class="text-danger" asp-validation-for="BookDto.NumberOfPage"></span>
+                </div>
+            </div>
+
+            <div class="mb-3 row">
+                <div class="col-3">
+                    <label class="form-label" asp-for="BookDto.PublicationDate">Ngày xuất bản*</label>
+                </div>
+                <div class="col-9">
+                    <input class="form-control" asp-for="BookDto.PublicationDate" />
+                    <span class="text-danger" asp-validation-for="BookDto.PublicationDate"></span>
+                </div>
+            </div>
+
+            <div class="mb-3 row">
+                <div class="col-3">
+                    <label class="form-label">Tác giả*</label>
+                </div>
+                <div class="col-9">
+                    <label class="visually-hidden" for="BookDto.AuthorId">Tác giả</label>
+                    <select class="form-select" id="BookDto.AuthorId" name="BookDto.AuthorId">
+                            <option selected>Tác giả...</option>
+                            @foreach (var author in Model.author)
+                            {
+                            <option selected="@(author.AuthorId==Model.BookDto.AuthorId)" value="@author.AuthorId" asp-for="BookDto.AuthorId">@author.FullName</option>
+                            }
+                     </select>
+                    <span class="text-danger" asp-validation-for="BookDto.AuthorName"></span>
+                    <a class="text-secondary" asp-area="Librarian" asp-controller="Author" asp-action="Upsert">
+                        Thêm tác giả khác
+                    </a>
+                </div>
+            </div>
+
+            <div class="mb-3 row">
+                <div class="col-3">
+                    <label class="form-label">Nhà xuất bản*</label>
+                </div>
+                <div class="col-9">
+                    <label class="visually-hidden" for="BookDto.PublisherId">Nhà xuất bản</label>
+                    <select class="form-select" id="BookDto.PublisherId" name="BookDto.PublisherId">
+                        <option selected>Nhà xuất bản...</option>
+                        @foreach (var publisher in Model.publisher)
+                        {
+                            <option selected="@(publisher.PublisherId==Model.BookDto.PublisherId)" value="@publisher.PublisherId" asp-for="BookDto.PublisherId">@publisher.Name</option>
+                        }
+                        
+                    </select>
+                    <span class="text-danger" asp-validation-for="BookDto.PublisherName"></span>
+                    <a class="text-secondary" asp-area="Librarian" asp-controller="Publisher" asp-action="Upsert">
+                        Thêm nhà xuất bản khác
+                    </a>
+                </div>
+            </div>
+
+            <div class="mb-3 row">
+                <div class="col-3">
+                    <label class="form-label">Thể loại*</label>
+                </div>
+                <div class="col-9">
+                    <div class="checkbox-column">
+                        @foreach (var category in Model.Categories)
+                        {
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox"
+                                       id="category-@category.CategoryId"
+                                       name="BookDto.CategoryIds" value="@category.CategoryId"
+                                       checked=@(CheckCategory.IsSelected(Model.BookDto, category)) />
+                                <label class="form-check-label" for="category-@category.CategoryId">
+                                    @category.Name
+                                </label>
+                            </div>
+                        }
+                    </div>
+                    <span class="text-danger" id="category-error"></span>
+                    <a class="text-secondary" asp-area="Librarian" asp-controller="Category" asp-action="Upsert">
+                        Thêm thể loại khác
+                    </a>
+                </div>
+            </div>
+
+            <partial name="_ActionOrReturnPartial" />
+        </div>
+
+        <div class="col-lg-4 p-4">
+            <div class="mb-3 row">
+                <div class="col-lg-10 col-6 offset-lg-1 offset-3">
+                    @if (Model.BookDto.ImageUrl is not null)
+                    {
+                        <img class="img-fluid rounded"
+                             src="~/images/Book/@Model.BookDto.ImageUrl" id="previewImage" />
+                    }
+                    else
+                    {
+                        <img class="img-fluid rounded"
+                             src="~/images/Book/No-Image-Placeholder.svg.png" id="previewImage" />
+                    }
+                </div>
+            </div>
+
+            <div class="mb-3 row">
+                <div class="col-lg-3">
+                    <label class="form-label">Ảnh</label>
+                </div>
+                <div class="col-lg-9">
+                    <input class="form-control" type="file" name="files" id="uploadBox" multiple />
+                    <input type="hidden" asp-for="BookDto.ImageUrl">
+                </div>
+            </div>
+
+            <div class="mb-3 row">
+                <div class="col-lg-3">
+                    <label class="form-label">Xóa ảnh</label>
+                </div>
+                <div class="col-lg-9">
+                    <a class="btn btn-danger"
+                       onclick=Delete("/admin/book/deleteImage/@Model.BookDto.BookId")>
+                        Xóa
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script src="~/js/validation/validate-checkboxes.js"></script>
+    <script src="~/js/search/search-author.js"></script>
+    <script src="~/js/search/search-publisher.js"></script>
+    <script src="~/js/handle-image/check-image.js"></script>
+    <script src="~/js/handle-image/confirm-delete-image.js"></script>
+}

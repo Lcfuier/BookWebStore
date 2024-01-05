@@ -1,0 +1,32 @@
+﻿@model PublisherDTO
+@{
+    ViewData["Title"] = ViewBag.Action == "Add" ? "Thêm Nhà Xuất Bản" : "Chỉnh Sửa Nhà Xuất Bản";
+}
+
+<form asp-action="Upsert" method="post">
+    <div class="row p-3 border">
+        <div class="col-md-12 border-bottom">
+            <h2 class="text-primary">@ViewData["Title"]</h2>
+        </div>
+        <div class="col-md-8 pt-4">
+            <input type="hidden" asp-for="PublisherId" />
+
+            <div class="mb-3 row">
+                <div class="col-md-3">
+                    <label class="form-label" asp-for="Name">Tên nhà xuất bản</label>
+                </div>
+                <div class="col-md-9">
+                    <input class="form-control" asp-for="Name" />
+                    <span class="text-danger" asp-validation-for="Name"></span>
+                </div>
+            </div>
+
+            <partial name="_ActionOrReturnPartial" />
+        </div>
+    </div>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+

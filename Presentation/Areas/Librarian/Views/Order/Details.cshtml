@@ -1,0 +1,281 @@
+﻿@model OrderDTO
+@{
+    ViewData["Title"] = "Chi tiết đơn hàng";
+}
+<form method="post">
+    <input asp-for="OrderId" hidden />
+    <br />
+    <div class="container">
+        <div class="card">
+            <div class="card-header bg-dark text-light ml-0">
+                <div class="container row">
+                    <div class="col-12 d-none d-md-block col-md-6 pb-1">
+                        <i class="fas fa-shopping-cart"></i> &nbsp; Đơn hàng của bạn
+                    </div>
+                    <div class="col-12 col-md-4 offset-md-2 text-right">
+                        <a asp-action="Index" class="btn btn-outline-info form-control btn-sm">Quay về</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="container rounded p-2">
+                    <div class="row">
+                        <div class="col-12 col-lg-6 pb-4">
+                            <div class="row">
+                                <h4 class="d-flex justify-content-between align-items-center mb-3">
+                                    <span class="text-primary">Thông tin giao hàng</span>
+                                </h4>
+                            </div>
+                            <div class="row my-1">
+                                <div class="col-3">Tên</div>
+                                <div class="col-9">
+                                    @if (User.IsInRole(Roles.Librarian))
+                                    {
+                                        <input asp-for="Name" type="text" class="form-control" />
+                                        <span asp-validation-for="Name"></span>
+                                    }
+                                    else
+                                    {
+                                        <input asp-for="Name" readonly type="text" class="form-control" />
+                                    }
+                                </div>
+                            </div>
+                            <div class="row my-1">
+                                <div class="col-3">Số điện thoại</div>
+                                <div class="col-9">
+                                    @if (User.IsInRole(Roles.Librarian))
+                                    {
+                                        <input asp-for="PhoneNumber" type="text" class="form-control" />
+                                        <span asp-validation-for="PhoneNumber"></span>
+                                    }
+                                    else
+                                    {
+                                        <input asp-for="PhoneNumber" readonly type="text" class="form-control" />
+                                    }
+                                </div>
+                            </div>
+                            <div class="row my-1">
+                                <div class="col-3">Địa chỉ</div>
+                                <div class="col-9">
+                                    @if (User.IsInRole(Roles.Librarian))
+                                    {
+                                        <input asp-for="Address" type="text" class="form-control" />
+                                        <span asp-validation-for="Address"></span>
+                                    }
+                                    else
+                                    {
+                                        <input asp-for="Address" readonly type="text" class="form-control" />
+                                    }
+                                </div>
+                            </div>
+                            <div class="row my-1">
+                                <div class="col-3">Xã/Phường</div>
+                                <div class="col-9">
+                                    @if (User.IsInRole(Roles.Librarian))
+                                    {
+                                        <input asp-for="Ward" type="text" class="form-control" />
+                                        <span asp-validation-for="Ward"></span>
+                                    }
+                                    else
+                                    {
+                                        <input asp-for="Ward" readonly type="text" class="form-control" />
+                                    }
+                                </div>
+                            </div>
+                            <div class="row my-1">
+                                <div class="col-3">Quận/Huyện</div>
+                                <div class="col-9">
+                                    @if (User.IsInRole(Roles.Librarian))
+                                    {
+                                        <input asp-for="District" type="text" class="form-control" />
+                                        <span asp-validation-for="District"></span>
+                                    }
+                                    else
+                                    {
+                                        <input asp-for="District" readonly type="text" class="form-control" />
+                                    }
+                                </div>
+                            </div>
+                            <div class="row my-1">
+                                <div class="col-3">Tỉnh/Thành phố</div>
+                                <div class="col-9">
+                                    @if (User.IsInRole(Roles.Librarian))
+                                    {
+                                        <input asp-for="City" type="text" class="form-control" />
+                                        <span asp-validation-for="City"></span>
+                                    }
+                                    else
+                                    {
+                                        <input asp-for="City" readonly type="text" class="form-control" />
+                                    }
+                                </div>
+                            </div>
+                            <div class="row my-1">
+                                <div class="col-3">Email</div>
+                                <div class="col-9">
+                                    <input asp-for="Customer.Email" readonly type="text" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="row my-1">
+                                <div class="col-3">Ngày đặt hàng</div>
+                                <div class="col-9">
+                                    <input value="@Model.OrderDate" readonly type="text" class="form-control" />
+                                </div>
+                            </div>
+                            @if (User.IsInRole(Roles.Librarian))
+                            {
+                                <div class="row my-1">
+                                    <div class="col-3">Mã vận chuyển</div>
+                                    <div class="col-9">
+                                        @if (User.IsInRole(Roles.Librarian))
+                                        {
+                                            <input id="carrierName" asp-for="Carrier" type="text" class="form-control" />
+                                            <span asp-validation-for="Carrier"></span>
+                                        }
+                                        else
+                                        {
+                                            <input asp-for="Carrier" readonly type="text" class="form-control" />
+                                        }
+                                    </div>
+                                </div>
+                                <div class="row my-1">
+                                    <div class="col-3">Mã theo dõi</div>
+                                    <div class="col-9">
+                                        @if (User.IsInRole(Roles.Librarian))
+                                        {
+                                            <input id="trackingNumber" asp-for="TrackingNumber" type="text" class="form-control" />
+                                            <span asp-validation-for="TrackingNumber"></span>
+                                        }
+                                        else
+                                        {
+                                            <input asp-for="TrackingNumber" readonly type="text" class="form-control" />
+                                        }
+                                    </div>
+                                </div>
+                                <div class="row my-1">
+                                    <div class="col-3">Ngày giao</div>
+                                    <div class="col-9">
+                                        <input value="@Model.ShippingDate" readonly type="text" class="form-control" />
+                                    </div>
+                                </div>
+                            }
+                            @if (User.IsInRole(Roles.Librarian))
+                            {
+                                <div class="row my-1">
+                                    <div class="col-3">Session ID</div>
+                                    <div class="col-9">
+                                        <input asp-for="SessionId" readonly type="text" class="form-control" />
+                                    </div>
+                                </div>
+                                <div class="row my-1">
+                                    <div class="col-3">Payment Intent ID</div>
+                                    <div class="col-9">
+                                        <input asp-for="PaymentIntentId" readonly type="text" class="form-control" />
+                                    </div>
+                                </div>
+                            }
+                            <div class="row my-1">
+                                <div class="col-3">Trạng thái thanh toán</div>
+                                <div class="col-9">
+                                    <input asp-for="PaymentStatus" readonly type="text" class="form-control" />
+                                </div>
+                            </div>
+                            @if (User.IsInRole(Roles.Librarian))
+                            {
+                                <button asp-action="UpdateOrderDetails" type="submit" class="btn btn-warning form-control my-1">Cập nhật thông tin đơn hàng</button>
+                            }
+
+                        </div>
+                        <div class="col-12 col-lg-5 offset-lg-1">
+                            <h4 class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="text-primary">Đơn hàng</span>
+                            </h4>
+                            <label class="btn btn-outline-primary form-control my-2">Trạng thái đơn hàng - @Model.OrderStatus</label>
+
+                            <ul class="list-group mb-3">
+                                @foreach (var orderDetail in Model.OrderDetails)
+                                {
+                                    <li class="list-group-item d-flex justify-content-between p-2 ">
+                                        <div class="row container">
+                                            <div class="col-8">
+
+                                                <h6 class="my-0 text-primary">@orderDetail.Book.Title </h6>
+                                                <small class="text-muted">Giá : @((orderDetail.Book.Price - orderDetail.Book.Price * orderDetail.Book.DiscountPercent).ToString("#,## đ"))</small><br />
+                                                <small class="text-muted">Số lượng : @orderDetail.Quantity</small>
+                                            </div>
+                                            <div class="col-4 text-end">
+                                                <p class="text-success mb-0">@((orderDetail.Price).ToString("#,## vnđ"))</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                }
+
+                                <li class="list-group-item bg-primary">
+                                    <div class="row container">
+                                        <div class="col-6">
+                                            <h5 class="text-white">Tổng</h5>
+                                        </div>
+                                        <div class="col-6 text-end">
+
+                                            <h5 class="text-white mt-2">@Model.TotalAmount.ToString("#,## vnđ")</h5>
+                                            
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            @if (User.IsInRole(Roles.Librarian))
+                            {
+                                var status = Model.OrderStatus;
+                                if (status == OrderStatus.StatusApproved)
+                                {
+                                    <button asp-action="StartProcessing" type="submit" class="btn btn-success form-control my-1">Bắt đầu xử lý</button>
+                                }
+                                if (status.CanBeCancelled())
+                                {
+                                    <button asp-action="CancelOrder" type="submit" class="btn btn-danger form-control my-1">Hủy đơn hàng</button>
+                                }
+                                if (Model.OrderStatus == OrderStatus.StatusInProcess )
+                                {
+                                    <button asp-action="ShipPartialOrder" onclick="return validateShippingDetails()" type="submit" class="btn btn-success form-control my-1">Bắt đầu vận chuyển</button>
+                                }
+                            }
+                            @if (User.IsInRole(Roles.User))
+                            {
+                                if (Model.OrderStatus == OrderStatus.StatusShipped)
+                                {
+                                    <button asp-action="CompleteOrder" type="submit" class="btn btn-success form-control my-1">Đã nhận hàng</button>
+                                }
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        function validateShippingDetails() {
+            if (document.getElementById("carrierName").value == "") {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Vui lòng nhập mã vận chuyển !',
+                });
+                return false;
+            }
+            if (document.getElementById("trackingNumber").value == "") {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Vui lòng nhập mã theo dõi !',
+                });
+                return false;
+            }
+            return true;
+        }
+    </script>
+}
+

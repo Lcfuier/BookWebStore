@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Quản Lý Sách";
+}
+
+<div class="row">
+    <div class="col-6">
+        <h2 class="text-primary">Tất Cả Các Sách</h2>
+    </div>
+    <div class="col-6 text-end">
+        <a class="btn btn-primary" asp-action="Upsert">
+            <span class="fas fa-plus"></span>&nbsp;Tạo Mới
+        </a>
+    </div>
+</div>
+
+<div class="p-4 border-top border-bottom">
+    <table id="datatable-book" class="table table-striped table-bordered" style="width:100%">
+        <thead class="table-info">
+            <tr>
+                <th>Tiêu đề</th>
+                <th>Giá</th>
+                <th>Tác giả</th>
+                <th>Thể loại</th>
+                <th></th>
+            </tr>
+        </thead>
+    </table>
+</div>
+
+@section Scripts {
+    <script src="~/js/datatable/book.js"></script>
+    <script src="~/js/datatable/confirm-delete.js"></script>
+}

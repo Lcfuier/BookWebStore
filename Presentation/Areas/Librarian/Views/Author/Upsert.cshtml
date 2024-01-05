@@ -1,0 +1,51 @@
+﻿@model AuthorDTO
+@{
+    ViewData["Title"] = ViewBag.Action == "Add" ? "Thêm Tác Giả" : "Chỉnh Sửa Tác Giả";
+}
+
+<form asp-action="Upsert" method="post">
+    <div class="row p-3 border">
+        <div class="col-md-12 border-bottom">
+            <h2 class="text-primary">@ViewData["Title"]</h2>
+        </div>
+        <div class="col-md-8 pt-4">
+            <input type="hidden" asp-for="AuthorId" />
+
+            <div class="mb-3 row">
+                <div class="col-md-3">
+                    <label class="form-label" asp-for="FirstName">Tên của tác giả</label>
+                </div>
+                <div class="col-md-9">
+                    <input class="form-control" asp-for="FirstName" />
+                    <span class="text-danger" asp-validation-for="FirstName"></span>
+                </div>
+            </div>
+
+            <div class="mb-3 row">
+                <div class="col-md-3">
+                    <label class="form-label" asp-for="LastName">Họ của tác giả</label>
+                </div>
+                <div class="col-md-9">
+                    <input class="form-control" asp-for="LastName" />
+                    <span class="text-danger" asp-validation-for="LastName"></span>
+                </div>
+            </div>
+
+            <div class="mb-3 row">
+                <div class="col-md-3">
+                    <label class="form-label" asp-for="PhoneNumber">Số điện thoại</label>
+                </div>
+                <div class="col-md-9">
+                    <input class="form-control" asp-for="PhoneNumber" />
+                    <span class="text-danger" asp-validation-for="PhoneNumber"></span>
+                </div>
+            </div>
+
+            <partial name="_ActionOrReturnPartial" />
+        </div>
+    </div>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
