@@ -2,6 +2,7 @@
 using Entity.DTOs;
 using Entity.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Caching.Memory;
 using Newtonsoft.Json.Linq;
 using Presentation.Models;
 using System.Diagnostics;
@@ -14,16 +15,27 @@ namespace Presentation.Controllers
         private readonly ILogger<HomeController> _logger;
         private readonly IBookService _bookService;
         private readonly ICategoryService _categoryService;
-        public HomeController(ILogger<HomeController> logger, IBookService bookService, ICategoryService categoryService)
+        private readonly IMemoryCache _memoryCache;
+        public HomeController(ILogger<HomeController> logger, IBookService bookService, ICategoryService categoryService, IMemoryCache memoryCache)
         {
             _logger = logger;
             _bookService = bookService;
             _categoryService = categoryService;
+            _memoryCache = memoryCache;
         }
         [HttpGet]
         public async Task<IActionResult> Index(Guid? CategoryId,string SearchString)
         {
+            var stopWatch=new Stopwatch();
+            stopWatch.Start();
+            //
             var books= await _bookService.GetAllBooksAsync();
+            var cacheEntryOption = new MemoryCacheEntryOptions()
+                                    .SetSlidingExpiration(TimeSpan.FromSeconds(45))
+                                    .SetAbsoluteExpiration(TimeSpan.FromSeconds(100))
+                                    .SetPriority(CacheItemPriority.Normal);
+            _memoryCache.Set("BookCache",books,cacheEntryOption);
+            stopWatch.Stop();
             var categories= await _categoryService.GetAllCategoryAsync();
             if (!String.IsNullOrEmpty(SearchString))
             {
@@ -40,6 +52,7 @@ namespace Presentation.Controllers
                 SearchString=SearchString,
                 CategoryId=CategoryId
             };
+            _logger.Log(LogLevel.Information, "Time " + stopWatch.ElapsedMilliseconds);
             return View(vm);
         }
 
