@@ -23,7 +23,11 @@ The BookStore project follows a typical n-tier architecture structure with the f
 - **Identity Provider**: Microsoft AspNetCore Identity 7.0.13
 - **Front-End Libraries**: Bootstrap, jQuery, DataTables, Ajax
 - **Several external technologies**: Toastr, Stripe
- 
+ # Google Login Option
+BookStore now has the added functionality of Google external login option, allowing users to register and sign in using their Google account.
+# License
+The BookStore project is open-source and released under the [MIT License](https://opensource.org/licenses/MIT). You are free to use, modify, and distribute the codebase as per the license terms.
+
 
 
 
