@@ -592,3 +592,8 @@ D:\DATA\BookStoreMVC\BookWebStore\Presentation\bin\Debug\net7.0\AutoMapper.dll
 D:\DATA\BookStoreMVC\BookWebStore\Presentation\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 D:\DATA\BookStoreMVC\BookWebStore\Presentation\bin\Debug\net7.0\Stripe.net.dll
 D:\DATA\BookStoreMVC\BookWebStore\Presentation\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.Google.dll
+D:\DATA\BookStoreMVC\BookWebStore\Presentation\bin\Debug\net7.0\BouncyCastle.Cryptography.dll
+D:\DATA\BookStoreMVC\BookWebStore\Presentation\bin\Debug\net7.0\MailKit.dll
+D:\DATA\BookStoreMVC\BookWebStore\Presentation\bin\Debug\net7.0\MimeKit.dll
+D:\DATA\BookStoreMVC\BookWebStore\Presentation\bin\Debug\net7.0\System.Security.Cryptography.Pkcs.dll
+D:\DATA\BookStoreMVC\BookWebStore\Presentation\bin\Debug\net7.0\runtimes\win\lib\net7.0\System.Security.Cryptography.Pkcs.dll
