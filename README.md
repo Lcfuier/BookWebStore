@@ -4,6 +4,9 @@ BookStore is an e-commerce web built with ASP.NET Core MVC, using Entity Framewo
 # Project Description
 
 BookStore allows user to browse and purchase books, while store can sell their products through the platform. The project consists of three roles: User, Librarian, and Admin. User can add book to the  cart, view and update the cart, and complete orders via Stripe payment processing. Librarian can add product, edit or delete existing product, and manage orders. Admins can create account, assign permissions to users and lock/unlock account.
+
+Default admin account : admin@gmail.com 
+                        Admin@123
 # Project Structure
 
 The BookStore project follows a typical n-tier architecture structure with the following layers:
