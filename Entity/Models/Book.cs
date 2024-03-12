@@ -8,7 +8,7 @@ namespace Entity.Models
     {
         [Key]
         public Guid BookId { get; set; }
-        [Column(TypeName = "varchar(80)")]
+        [MaxLength(80)]
         public string Title { get; set; }
         public string Description { get; set; }
         [Column(TypeName = "varchar(13)")]

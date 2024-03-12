@@ -10,7 +10,7 @@ using Stripe;
 namespace Presentation.Areas.Librarian.Controllers
 {
     [Area("Librarian")]
-    [Authorize(Roles = Roles.Librarian)]
+    [Authorize(Roles = Roles.Librarian + "," + Roles.Admin)]
     public class AuthorController : Controller
     {
         private readonly IMapper _mapper;

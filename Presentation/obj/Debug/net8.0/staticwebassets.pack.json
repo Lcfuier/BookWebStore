@@ -1,0 +1,393 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Presentation.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Presentation.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\css\\bootswatchTheme.css",
+      "PackagePath": "staticwebassets\\css\\bootswatchTheme.css"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\images\\Book\\011b238f-29ea-43a9-ac13-e50f67563d62.jpg",
+      "PackagePath": "staticwebassets\\images\\Book\\011b238f-29ea-43a9-ac13-e50f67563d62.jpg"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\images\\Book\\03cd3de0-9cd4-428a-98b1-e58749a51642.jpg",
+      "PackagePath": "staticwebassets\\images\\Book\\03cd3de0-9cd4-428a-98b1-e58749a51642.jpg"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\images\\Book\\04cdea66-e0f2-4314-8f46-f2bcd799ce6e.jpg",
+      "PackagePath": "staticwebassets\\images\\Book\\04cdea66-e0f2-4314-8f46-f2bcd799ce6e.jpg"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\images\\Book\\0e92ec0f-bdb5-445f-b9d0-5a7add679816.jpg",
+      "PackagePath": "staticwebassets\\images\\Book\\0e92ec0f-bdb5-445f-b9d0-5a7add679816.jpg"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\images\\Book\\135ec8cc-d130-42fe-b6cf-91f2ad704d6a.jpg",
+      "PackagePath": "staticwebassets\\images\\Book\\135ec8cc-d130-42fe-b6cf-91f2ad704d6a.jpg"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\images\\Book\\18e0b7ae-bde4-4cc5-9089-5a82515ada24.jpg",
+      "PackagePath": "staticwebassets\\images\\Book\\18e0b7ae-bde4-4cc5-9089-5a82515ada24.jpg"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\images\\Book\\1be063c4-9839-4d9e-9728-19a71ec04c13.jpg",
+      "PackagePath": "staticwebassets\\images\\Book\\1be063c4-9839-4d9e-9728-19a71ec04c13.jpg"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\images\\Book\\62d0c334-220c-45a6-9142-090464afb16b.jpg",
+      "PackagePath": "staticwebassets\\images\\Book\\62d0c334-220c-45a6-9142-090464afb16b.jpg"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\images\\Book\\81f8ca04-69ea-423e-a6e4-17fbaf9d5b32.jpg",
+      "PackagePath": "staticwebassets\\images\\Book\\81f8ca04-69ea-423e-a6e4-17fbaf9d5b32.jpg"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\images\\Book\\CodeDaoKySu.jpg",
+      "PackagePath": "staticwebassets\\images\\Book\\CodeDaoKySu.jpg"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\images\\Book\\Don'tMakeMeThink.jpg",
+      "PackagePath": "staticwebassets\\images\\Book\\Don'tMakeMeThink.jpg"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\images\\Book\\No-Image-Placeholder.svg.png",
+      "PackagePath": "staticwebassets\\images\\Book\\No-Image-Placeholder.svg.png"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\images\\Book\\bfda7e7b-8c1f-4b8e-ae59-f47cbbcf21f9.jpg",
+      "PackagePath": "staticwebassets\\images\\Book\\bfda7e7b-8c1f-4b8e-ae59-f47cbbcf21f9.jpg"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\images\\Book\\d9575df1-328a-4457-aa86-1847de743b13.jpg",
+      "PackagePath": "staticwebassets\\images\\Book\\d9575df1-328a-4457-aa86-1847de743b13.jpg"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\images\\digital-inventory.png",
+      "PackagePath": "staticwebassets\\images\\digital-inventory.png"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\images\\success.png",
+      "PackagePath": "staticwebassets\\images\\success.png"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\js\\datatable\\author.js",
+      "PackagePath": "staticwebassets\\js\\datatable\\author.js"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\js\\datatable\\book.js",
+      "PackagePath": "staticwebassets\\js\\datatable\\book.js"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\js\\datatable\\category.js",
+      "PackagePath": "staticwebassets\\js\\datatable\\category.js"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\js\\datatable\\confirm-delete.js",
+      "PackagePath": "staticwebassets\\js\\datatable\\confirm-delete.js"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\js\\datatable\\order.js",
+      "PackagePath": "staticwebassets\\js\\datatable\\order.js"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\js\\datatable\\orderIndex.js",
+      "PackagePath": "staticwebassets\\js\\datatable\\orderIndex.js"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\js\\datatable\\publisher.js",
+      "PackagePath": "staticwebassets\\js\\datatable\\publisher.js"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\js\\datatable\\test.js",
+      "PackagePath": "staticwebassets\\js\\datatable\\test.js"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\js\\datatable\\user.js",
+      "PackagePath": "staticwebassets\\js\\datatable\\user.js"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\js\\handle-image\\check-image.js",
+      "PackagePath": "staticwebassets\\js\\handle-image\\check-image.js"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\js\\handle-image\\confirm-delete-image.js",
+      "PackagePath": "staticwebassets\\js\\handle-image\\confirm-delete-image.js"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\js\\search\\search-author.js",
+      "PackagePath": "staticwebassets\\js\\search\\search-author.js"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\js\\search\\search-book.js",
+      "PackagePath": "staticwebassets\\js\\search\\search-book.js"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\js\\search\\search-publisher.js",
+      "PackagePath": "staticwebassets\\js\\search\\search-publisher.js"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\js\\validation\\validate-checkboxes.js",
+      "PackagePath": "staticwebassets\\js\\validation\\validate-checkboxes.js"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Presentation.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Presentation.props",
+      "PackagePath": "build\\Presentation.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Presentation.props",
+      "PackagePath": "buildMultiTargeting\\Presentation.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Presentation.props",
+      "PackagePath": "buildTransitive\\Presentation.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -53,7 +53,7 @@
                                 </a>
                             </li>
                         }
-                        @if (User.IsInRole(Roles.Librarian))
+                        @if (User.IsInRole(Roles.Librarian) || User.IsInRole(Roles.Admin))
                         {
                             <li class="nav-item dropdown " aria-haspopup="true" aria-expanded="false">
                                 <a class="nav-link dropdown-toggle " role="button" data-bs-toggle="dropdown" >

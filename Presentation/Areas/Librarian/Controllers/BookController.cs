@@ -13,7 +13,7 @@ using Stripe;
 namespace Presentation.Areas.Librarian.Controllers
 {
     [Area("Librarian")]
-    [Authorize(Roles =Roles.Librarian)]
+    [Authorize(Roles = Roles.Librarian + "," + Roles.Admin)]
     public class BookController : Controller
     {
         private readonly IBookService _bookService;

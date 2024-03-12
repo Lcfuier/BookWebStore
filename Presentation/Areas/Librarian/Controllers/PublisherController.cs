@@ -10,7 +10,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Presentation.Areas.Librarian.Controllers
 {
     [Area("Librarian")]
-    [Authorize(Roles =Roles.Librarian)]
+    [Authorize(Roles = Roles.Librarian + "," + Roles.Admin)]
     public class PublisherController : Controller
     {
         private readonly IPublisherService _service;
