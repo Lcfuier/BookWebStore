@@ -2,7 +2,7 @@ using DataAccess.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
 using Entity.Models;
-using DataAccess.UnitOfWorld;
+using DataAccess.UnitOfWork;
 using DataAccess.Interface;
 using DataAccess.Repository;
 using BussinessLogic.Interface;

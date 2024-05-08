@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\Presentation.csproj": {}
+    "D:\\BookWebStore\\Presentation\\Presentation.csproj": {}
   },
   "projects": {
-    "D:\\DATA\\BookStoreMVC\\BookWebStore\\BussinessLogic\\BussinessLogic.csproj": {
+    "D:\\BookWebStore\\BussinessLogic\\BussinessLogic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\DATA\\BookStoreMVC\\BookWebStore\\BussinessLogic\\BussinessLogic.csproj",
+        "projectUniqueName": "D:\\BookWebStore\\BussinessLogic\\BussinessLogic.csproj",
         "projectName": "BussinessLogic",
-        "projectPath": "D:\\DATA\\BookStoreMVC\\BookWebStore\\BussinessLogic\\BussinessLogic.csproj",
-        "packagesPath": "C:\\Users\\DUY\\.nuget\\packages\\",
-        "outputPath": "D:\\DATA\\BookStoreMVC\\BookWebStore\\BussinessLogic\\obj\\",
+        "projectPath": "D:\\BookWebStore\\BussinessLogic\\BussinessLogic.csproj",
+        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+        "outputPath": "D:\\BookWebStore\\BussinessLogic\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\DUY\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,11 +28,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\DATA\\BookStoreMVC\\BookWebStore\\DataAccess\\DataAccess.csproj": {
-                "projectPath": "D:\\DATA\\BookStoreMVC\\BookWebStore\\DataAccess\\DataAccess.csproj"
+              "D:\\BookWebStore\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "D:\\BookWebStore\\DataAccess\\DataAccess.csproj"
               },
-              "D:\\DATA\\BookStoreMVC\\BookWebStore\\Entity\\Entity.csproj": {
-                "projectPath": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Entity\\Entity.csproj"
+              "D:\\BookWebStore\\Entity\\Entity.csproj": {
+                "projectPath": "D:\\BookWebStore\\Entity\\Entity.csproj"
               }
             }
           }
@@ -73,21 +73,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\DATA\\BookStoreMVC\\BookWebStore\\DataAccess\\DataAccess.csproj": {
+    "D:\\BookWebStore\\DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\DATA\\BookStoreMVC\\BookWebStore\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "D:\\BookWebStore\\DataAccess\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "D:\\DATA\\BookStoreMVC\\BookWebStore\\DataAccess\\DataAccess.csproj",
-        "packagesPath": "C:\\Users\\DUY\\.nuget\\packages\\",
-        "outputPath": "D:\\DATA\\BookStoreMVC\\BookWebStore\\DataAccess\\obj\\",
+        "projectPath": "D:\\BookWebStore\\DataAccess\\DataAccess.csproj",
+        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+        "outputPath": "D:\\BookWebStore\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\DUY\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -101,8 +101,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\DATA\\BookStoreMVC\\BookWebStore\\Entity\\Entity.csproj": {
-                "projectPath": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Entity\\Entity.csproj"
+              "D:\\BookWebStore\\Entity\\Entity.csproj": {
+                "projectPath": "D:\\BookWebStore\\Entity\\Entity.csproj"
               }
             }
           }
@@ -163,21 +163,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\DATA\\BookStoreMVC\\BookWebStore\\Entity\\Entity.csproj": {
+    "D:\\BookWebStore\\Entity\\Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Entity\\Entity.csproj",
+        "projectUniqueName": "D:\\BookWebStore\\Entity\\Entity.csproj",
         "projectName": "Entity",
-        "projectPath": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Entity\\Entity.csproj",
-        "packagesPath": "C:\\Users\\DUY\\.nuget\\packages\\",
-        "outputPath": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Entity\\obj\\",
+        "projectPath": "D:\\BookWebStore\\Entity\\Entity.csproj",
+        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+        "outputPath": "D:\\BookWebStore\\Entity\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\DUY\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -233,21 +233,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\Presentation.csproj": {
+    "D:\\BookWebStore\\Presentation\\Presentation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\Presentation.csproj",
+        "projectUniqueName": "D:\\BookWebStore\\Presentation\\Presentation.csproj",
         "projectName": "Presentation",
-        "projectPath": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\Presentation.csproj",
-        "packagesPath": "C:\\Users\\DUY\\.nuget\\packages\\",
-        "outputPath": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Presentation\\obj\\",
+        "projectPath": "D:\\BookWebStore\\Presentation\\Presentation.csproj",
+        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+        "outputPath": "D:\\BookWebStore\\Presentation\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\DUY\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -261,14 +261,14 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\DATA\\BookStoreMVC\\BookWebStore\\BussinessLogic\\BussinessLogic.csproj": {
-                "projectPath": "D:\\DATA\\BookStoreMVC\\BookWebStore\\BussinessLogic\\BussinessLogic.csproj"
+              "D:\\BookWebStore\\BussinessLogic\\BussinessLogic.csproj": {
+                "projectPath": "D:\\BookWebStore\\BussinessLogic\\BussinessLogic.csproj"
               },
-              "D:\\DATA\\BookStoreMVC\\BookWebStore\\DataAccess\\DataAccess.csproj": {
-                "projectPath": "D:\\DATA\\BookStoreMVC\\BookWebStore\\DataAccess\\DataAccess.csproj"
+              "D:\\BookWebStore\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "D:\\BookWebStore\\DataAccess\\DataAccess.csproj"
               },
-              "D:\\DATA\\BookStoreMVC\\BookWebStore\\Entity\\Entity.csproj": {
-                "projectPath": "D:\\DATA\\BookStoreMVC\\BookWebStore\\Entity\\Entity.csproj"
+              "D:\\BookWebStore\\Entity\\Entity.csproj": {
+                "projectPath": "D:\\BookWebStore\\Entity\\Entity.csproj"
               }
             }
           }
@@ -356,7 +356,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

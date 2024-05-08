@@ -1,7 +1,7 @@
 ﻿using BussinessLogic.Interface;
 using DataAccess.Data;
 using DataAccess.Interface;
-using DataAccess.UnitOfWorld;
+using DataAccess.UnitOfWork;
 using Entity.Models;
 using Entity.Query;
 using System;

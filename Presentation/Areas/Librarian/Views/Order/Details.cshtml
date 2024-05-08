@@ -29,7 +29,7 @@
                             <div class="row my-1">
                                 <div class="col-3">Tên</div>
                                 <div class="col-9">
-                                    @if (User.IsInRole(Roles.Librarian))
+                                    @if (User.IsInRole(Roles.Librarian) || User.IsInRole(Roles.Admin))
                                     {
                                         <input asp-for="Name" type="text" class="form-control" />
                                         <span asp-validation-for="Name"></span>
@@ -43,7 +43,7 @@
                             <div class="row my-1">
                                 <div class="col-3">Số điện thoại</div>
                                 <div class="col-9">
-                                    @if (User.IsInRole(Roles.Librarian))
+                                    @if (User.IsInRole(Roles.Librarian) || User.IsInRole(Roles.Admin))
                                     {
                                         <input asp-for="PhoneNumber" type="text" class="form-control" />
                                         <span asp-validation-for="PhoneNumber"></span>
@@ -57,7 +57,7 @@
                             <div class="row my-1">
                                 <div class="col-3">Địa chỉ</div>
                                 <div class="col-9">
-                                    @if (User.IsInRole(Roles.Librarian))
+                                    @if (User.IsInRole(Roles.Librarian) || User.IsInRole(Roles.Admin))
                                     {
                                         <input asp-for="Address" type="text" class="form-control" />
                                         <span asp-validation-for="Address"></span>
@@ -71,7 +71,7 @@
                             <div class="row my-1">
                                 <div class="col-3">Xã/Phường</div>
                                 <div class="col-9">
-                                    @if (User.IsInRole(Roles.Librarian))
+                                    @if (User.IsInRole(Roles.Librarian) || User.IsInRole(Roles.Admin))
                                     {
                                         <input asp-for="Ward" type="text" class="form-control" />
                                         <span asp-validation-for="Ward"></span>
@@ -85,7 +85,7 @@
                             <div class="row my-1">
                                 <div class="col-3">Quận/Huyện</div>
                                 <div class="col-9">
-                                    @if (User.IsInRole(Roles.Librarian))
+                                    @if (User.IsInRole(Roles.Librarian) || User.IsInRole(Roles.Admin))
                                     {
                                         <input asp-for="District" type="text" class="form-control" />
                                         <span asp-validation-for="District"></span>
@@ -99,7 +99,7 @@
                             <div class="row my-1">
                                 <div class="col-3">Tỉnh/Thành phố</div>
                                 <div class="col-9">
-                                    @if (User.IsInRole(Roles.Librarian))
+                                    @if (User.IsInRole(Roles.Librarian) || User.IsInRole(Roles.Admin))
                                     {
                                         <input asp-for="City" type="text" class="form-control" />
                                         <span asp-validation-for="City"></span>
@@ -122,12 +122,12 @@
                                     <input value="@Model.OrderDate" readonly type="text" class="form-control" />
                                 </div>
                             </div>
-                            @if (User.IsInRole(Roles.Librarian))
+                            @if (User.IsInRole(Roles.Librarian) || User.IsInRole(Roles.Admin))
                             {
                                 <div class="row my-1">
                                     <div class="col-3">Mã vận chuyển</div>
                                     <div class="col-9">
-                                        @if (User.IsInRole(Roles.Librarian))
+                                        @if (User.IsInRole(Roles.Librarian) || User.IsInRole(Roles.Admin))
                                         {
                                             <input id="carrierName" asp-for="Carrier" type="text" class="form-control" />
                                             <span asp-validation-for="Carrier"></span>
@@ -141,7 +141,7 @@
                                 <div class="row my-1">
                                     <div class="col-3">Mã theo dõi</div>
                                     <div class="col-9">
-                                        @if (User.IsInRole(Roles.Librarian))
+                                        @if (User.IsInRole(Roles.Librarian) || User.IsInRole(Roles.Admin))
                                         {
                                             <input id="trackingNumber" asp-for="TrackingNumber" type="text" class="form-control" />
                                             <span asp-validation-for="TrackingNumber"></span>
@@ -159,7 +159,7 @@
                                     </div>
                                 </div>
                             }
-                            @if (User.IsInRole(Roles.Librarian))
+                            @if (User.IsInRole(Roles.Librarian) || User.IsInRole(Roles.Admin))
                             {
                                 <div class="row my-1">
                                     <div class="col-3">Session ID</div>
@@ -180,7 +180,7 @@
                                     <input asp-for="PaymentStatus" readonly type="text" class="form-control" />
                                 </div>
                             </div>
-                            @if (User.IsInRole(Roles.Librarian))
+                            @if (User.IsInRole(Roles.Librarian) || User.IsInRole(Roles.Admin))
                             {
                                 <button asp-action="UpdateOrderDetails" type="submit" class="btn btn-warning form-control my-1">Cập nhật thông tin đơn hàng</button>
                             }
@@ -223,7 +223,7 @@
                                     </div>
                                 </li>
                             </ul>
-                            @if (User.IsInRole(Roles.Librarian))
+                            @if (User.IsInRole(Roles.Librarian) || User.IsInRole(Roles.Admin))
                             {
                                 var status = Model.OrderStatus;
                                 if (status == OrderStatus.StatusApproved)

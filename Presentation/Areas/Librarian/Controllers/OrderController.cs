@@ -59,7 +59,7 @@ namespace Presentation.Areas.Librarian.Controllers
             return View(orderDto);
         }
         [HttpPost]
-        [Authorize(Roles=Roles.Librarian)]
+        [Authorize(Roles = Roles.Librarian + "," + Roles.Admin)]
         public async Task<IActionResult> UpdateOrderDetails(OrderDTO orderDto)
         {
             if (orderDto is null)
@@ -89,7 +89,7 @@ namespace Presentation.Areas.Librarian.Controllers
         }
 
         [HttpPost]
-        [Authorize(Roles = Roles.Librarian)]
+        [Authorize(Roles = Roles.Librarian + "," + Roles.Admin)]
         public async Task<IActionResult> StartProcessing(OrderDTO orderDto)
         {
             if (orderDto is null)
@@ -108,7 +108,7 @@ namespace Presentation.Areas.Librarian.Controllers
         }
 
         [HttpPost]
-        [Authorize(Roles = Roles.Librarian)]
+        [Authorize(Roles = Roles.Librarian + "," + Roles.Admin)]
         public async Task<IActionResult> ShipPartialOrder(OrderDTO orderDto)
         {
             if (orderDto is null)
@@ -148,7 +148,7 @@ namespace Presentation.Areas.Librarian.Controllers
         }
 
         [HttpPost]
-        [Authorize(Roles = Roles.Librarian)]
+        [Authorize(Roles = Roles.Librarian + "," + Roles.Admin)]
         public async Task<IActionResult> CancelOrder(OrderDTO orderDto)
         {
             var order = await _unitOfWork.Order.GetAsync(new QueryOptions<Order>()
@@ -211,7 +211,7 @@ namespace Presentation.Areas.Librarian.Controllers
             }
 
 
-            if (User.IsInRole(Roles.Librarian))
+            if (User.IsInRole(Roles.Librarian) || User.IsInRole(Roles.Admin))
             {
                 // Accept all
                 roleFilter = r => true;
