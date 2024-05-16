@@ -3,6 +3,15 @@
 @{
     ViewData["Title"] = "Home Page";
 }
+@{
+    Pager pager = new Pager();
+    int pageNo = 0;
+    if (ViewBag.Pager != null)
+    {
+        pager = ViewBag.Pager;
+        pageNo = pager.CurrentPage;
+    }
+}
 <h1>Tất cả sách</h1>
 <hr />
 <div class="my-2">
@@ -35,7 +44,7 @@
 <div class="w-100 mt-4 d-flex flex-wrap">
     @foreach (var book in Model.Books)
     {
-        <div class="card mx-2 mb-4" style="width: 16rem;">
+        <div class="card mx-2 mb-6 mt-4" style="width: 15.20rem; ">
             @if (string.IsNullOrEmpty(book.ImageURL))
             {
                 <img style="width:100%;height:300px" src="/Images/Book/No-Image-Placeholder.svg.png" class="card-img-top" alt="...">
@@ -69,6 +78,10 @@
                 </p>
             </div>
         </div>
+        <br>
     }
+
+    <partial name="_Pagination" model="@pager" />
+
 </div>
 

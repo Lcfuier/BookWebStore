@@ -4,12 +4,12 @@
     "D:\\BookWebStore\\Presentation\\Presentation.csproj": {}
   },
   "projects": {
-    "D:\\BookWebStore\\BussinessLogic\\BussinessLogic.csproj": {
+    "D:\\BookWebStore\\BussinessLogic\\BusinessLogic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\BookWebStore\\BussinessLogic\\BussinessLogic.csproj",
-        "projectName": "BussinessLogic",
-        "projectPath": "D:\\BookWebStore\\BussinessLogic\\BussinessLogic.csproj",
+        "projectUniqueName": "D:\\BookWebStore\\BussinessLogic\\BusinessLogic.csproj",
+        "projectName": "BusinessLogic",
+        "projectPath": "D:\\BookWebStore\\BussinessLogic\\BusinessLogic.csproj",
         "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
         "outputPath": "D:\\BookWebStore\\BussinessLogic\\obj\\",
         "projectStyle": "PackageReference",
@@ -261,8 +261,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\BookWebStore\\BussinessLogic\\BussinessLogic.csproj": {
-                "projectPath": "D:\\BookWebStore\\BussinessLogic\\BussinessLogic.csproj"
+              "D:\\BookWebStore\\BussinessLogic\\BusinessLogic.csproj": {
+                "projectPath": "D:\\BookWebStore\\BussinessLogic\\BusinessLogic.csproj"
               },
               "D:\\BookWebStore\\DataAccess\\DataAccess.csproj": {
                 "projectPath": "D:\\BookWebStore\\DataAccess\\DataAccess.csproj"

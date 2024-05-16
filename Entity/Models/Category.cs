@@ -8,7 +8,7 @@ namespace Entity.Models
         [Key]
         public Guid CategoryId { get; set; }
         [Required]
-        [MaxLength(20)]
+        [MaxLength(80)]
         public string Name { get; set; }
         public DateTime LastModifiedDate { get; set; }
         [ForeignKey("CategoryId")]

@@ -6289,9 +6289,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\BookWebStore\\BussinessLogic\\BussinessLogic.csproj",
-      "projectName": "BussinessLogic",
-      "projectPath": "D:\\BookWebStore\\BussinessLogic\\BussinessLogic.csproj",
+      "projectUniqueName": "D:\\BookWebStore\\BussinessLogic\\BusinessLogic.csproj",
+      "projectName": "BusinessLogic",
+      "projectPath": "D:\\BookWebStore\\BussinessLogic\\BusinessLogic.csproj",
       "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
       "outputPath": "D:\\BookWebStore\\BussinessLogic\\obj\\",
       "projectStyle": "PackageReference",

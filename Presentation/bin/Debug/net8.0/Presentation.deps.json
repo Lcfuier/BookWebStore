@@ -9,7 +9,7 @@
       "Presentation/1.0.0": {
         "dependencies": {
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
-          "BussinessLogic": "1.0.0",
+          "BusinessLogic": "1.0.0",
           "DataAccess": "1.0.0",
           "Entity": "1.0.0",
           "MailKit": "4.4.0",
@@ -2342,14 +2342,14 @@
           }
         }
       },
-      "BussinessLogic/1.0.0": {
+      "BusinessLogic/1.0.0": {
         "dependencies": {
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
           "DataAccess": "1.0.0",
           "Entity": "1.0.0"
         },
         "runtime": {
-          "BussinessLogic.dll": {}
+          "BusinessLogic.dll": {}
         }
       },
       "DataAccess/1.0.0": {
@@ -3787,7 +3787,7 @@
       "path": "system.windows.extensions/7.0.0",
       "hashPath": "system.windows.extensions.7.0.0.nupkg.sha512"
     },
-    "BussinessLogic/1.0.0": {
+    "BusinessLogic/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

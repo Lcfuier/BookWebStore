@@ -24,7 +24,7 @@ namespace Presentation.Controllers
             _memoryCache = memoryCache;
         }
         [HttpGet]
-        public async Task<IActionResult> Index(Guid? CategoryId,string SearchString)
+        public async Task<IActionResult> Index(Guid? CategoryId,string SearchString, int page = 1)
         {
             var stopWatch=new Stopwatch();
             stopWatch.Start();
@@ -45,9 +45,19 @@ namespace Presentation.Controllers
             {
                 books=books.Where(s=>s.Categories.Any(a=>a.CategoryId==CategoryId));
             }
+            const int pageSize = 10;
+            if (page < 1)
+            {
+                page = 1;
+            }
+            int recsCount = books.Count();
+            var pager = new Pager(recsCount, page, pageSize);
+            int recSkip = (page - 1) * pageSize;
+            var data = books.Skip(recSkip).Take(pager.PageSize).ToList();
+            this.ViewBag.Pager = pager;
             BookDisplayModel vm = new BookDisplayModel
             {
-                Books=books,
+                Books=data,
                 categories= categories,
                 SearchString=SearchString,
                 CategoryId=CategoryId
