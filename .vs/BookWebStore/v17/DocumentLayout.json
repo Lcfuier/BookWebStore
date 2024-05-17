@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\BookWebStore\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CBB407DA-B07A-4AEE-ADEE-6B9E2EFD573F}|Presentation\\Presentation.csproj|d:\\bookwebstore\\presentation\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CBB407DA-B07A-4AEE-ADEE-6B9E2EFD573F}|Presentation\\Presentation.csproj|solutionrelative:presentation\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CBB407DA-B07A-4AEE-ADEE-6B9E2EFD573F}|Presentation\\Presentation.csproj|d:\\bookwebstore\\presentation\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{CBB407DA-B07A-4AEE-ADEE-6B9E2EFD573F}|Presentation\\Presentation.csproj|solutionrelative:presentation\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -26,11 +30,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\BookWebStore\\Presentation\\appsettings.json",
+              "RelativeDocumentMoniker": "Presentation\\appsettings.json",
+              "ToolTip": "D:\\BookWebStore\\Presentation\\appsettings.json",
+              "RelativeToolTip": "Presentation\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-17T15:54:18.223Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "_Pagination.cshtml",
               "DocumentMoniker": "D:\\BookWebStore\\Presentation\\Views\\Shared\\_Pagination.cshtml",
               "RelativeDocumentMoniker": "Presentation\\Views\\Shared\\_Pagination.cshtml",
@@ -38,25 +55,24 @@
               "RelativeToolTip": "Presentation\\Views\\Shared\\_Pagination.cshtml",
               "ViewState": "AQIAACQAAAAAAAAAAAAAAAkAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-13T11:10:39.55Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-13T11:10:39.55Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\BookWebStore\\Presentation\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Presentation\\Views\\Home\\Index.cshtml",
               "ToolTip": "D:\\BookWebStore\\Presentation\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "Presentation\\Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAEUAAAAAAAAAAAAAAFQAAAAAAAAA",
+              "ViewState": "AQIAADMAAAAAAAAAAAAAAFQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-05-13T11:08:31.946Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Roles.cs",
               "DocumentMoniker": "D:\\BookWebStore\\Entity\\Constants\\Roles.cs",
               "RelativeDocumentMoniker": "Entity\\Constants\\Roles.cs",
@@ -64,12 +80,11 @@
               "RelativeToolTip": "Entity\\Constants\\Roles.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-13T10:56:24.703Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-13T10:56:24.703Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\BookWebStore\\Presentation\\Program.cs",
               "RelativeDocumentMoniker": "Presentation\\Program.cs",
@@ -77,8 +92,7 @@
               "RelativeToolTip": "Presentation\\Program.cs",
               "ViewState": "AQIAABsAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-13T06:30:32.842Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-13T06:30:32.842Z"
             }
           ]
         }
