@@ -1,0 +1,7 @@
+D:\BookWebStore\BookWebStore.UnitTest\bin\Debug\net8.0\CoverletSourceRootsMapping_BookWebStore.UnitTest
+D:\BookWebStore\BookWebStore.UnitTest\obj\Debug\net8.0\BookWebStore.UnitTest.csproj.AssemblyReference.cache
+D:\BookWebStore\BookWebStore.UnitTest\obj\Debug\net8.0\BookWebStore.UnitTest.GeneratedMSBuildEditorConfig.editorconfig
+D:\BookWebStore\BookWebStore.UnitTest\obj\Debug\net8.0\BookWebStore.UnitTest.AssemblyInfoInputs.cache
+D:\BookWebStore\BookWebStore.UnitTest\obj\Debug\net8.0\BookWebStore.UnitTest.AssemblyInfo.cs
+D:\BookWebStore\BookWebStore.UnitTest\obj\Debug\net8.0\BookWebStore.UnitTest.csproj.CoreCompileInputs.cache
+D:\BookWebStore\BookWebStore.UnitTest\obj\Debug\net8.0\BookWebStore.UnitTest.sourcelink.json

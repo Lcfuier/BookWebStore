@@ -1,0 +1,9 @@
+D:\BookWebStore\Presentation\obj\Debug\net6.0\Presentation.csproj.AssemblyReference.cache
+D:\BookWebStore\Presentation\obj\Debug\net6.0\Presentation.GeneratedMSBuildEditorConfig.editorconfig
+D:\BookWebStore\Presentation\obj\Debug\net6.0\Presentation.AssemblyInfoInputs.cache
+D:\BookWebStore\Presentation\obj\Debug\net6.0\Presentation.AssemblyInfo.cs
+D:\BookWebStore\Presentation\obj\Debug\net6.0\Presentation.csproj.CoreCompileInputs.cache
+D:\BookWebStore\Presentation\obj\Debug\net6.0\Presentation.MvcApplicationPartsAssemblyInfo.cache
+D:\BookWebStore\Presentation\obj\Debug\net6.0\Presentation.RazorAssemblyInfo.cache
+D:\BookWebStore\Presentation\obj\Debug\net6.0\Presentation.RazorAssemblyInfo.cs
+D:\BookWebStore\Presentation\obj\Debug\net6.0\Presentation.sourcelink.json

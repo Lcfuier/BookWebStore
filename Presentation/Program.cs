@@ -15,7 +15,8 @@ using System.Net.NetworkInformation;
 using Microsoft.Extensions.FileProviders;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.Google;
-
+using BusinessLogic.Interface;
+using BusinessLogic.Service;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -63,6 +64,7 @@ builder.Services.AddTransient<ICartService,CartService>();
 builder.Services.AddTransient<IOrderService, OrderService>();
 builder.Services.AddTransient<IAuthorService, AuthorService>();
 builder.Services.AddTransient<IPublisherService, PublisherService>();
+builder.Services.AddSingleton<ICacheService, CacheService>();
 
 builder.Services.Configure<StripeSettings>(builder.Configuration.GetSection("Stripe"));
 /*builder.Services.AddDefaultIdentity<Customer>(options =>

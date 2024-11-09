@@ -24,7 +24,7 @@ namespace Presentation.Controllers
             _memoryCache = memoryCache;
         }
         [HttpGet]
-        public async Task<IActionResult> Index(Guid? CategoryId,string SearchString, int page = 1)
+        public async Task<IActionResult> Index(Guid? CategoryId,string? SearchString, int page = 1)
         {
             var stopWatch=new Stopwatch();
             stopWatch.Start();

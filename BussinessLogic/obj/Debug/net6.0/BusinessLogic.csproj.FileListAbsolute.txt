@@ -1,0 +1,6 @@
+D:\BookWebStore\BussinessLogic\obj\Debug\net6.0\BusinessLogic.csproj.AssemblyReference.cache
+D:\BookWebStore\BussinessLogic\obj\Debug\net6.0\BusinessLogic.GeneratedMSBuildEditorConfig.editorconfig
+D:\BookWebStore\BussinessLogic\obj\Debug\net6.0\BusinessLogic.AssemblyInfoInputs.cache
+D:\BookWebStore\BussinessLogic\obj\Debug\net6.0\BusinessLogic.AssemblyInfo.cs
+D:\BookWebStore\BussinessLogic\obj\Debug\net6.0\BusinessLogic.csproj.CoreCompileInputs.cache
+D:\BookWebStore\BussinessLogic\obj\Debug\net6.0\BusinessLogic.sourcelink.json
